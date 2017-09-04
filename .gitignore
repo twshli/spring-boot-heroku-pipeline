@@ -8,6 +8,7 @@ build
 out
 .gradle
 .idea
+*.jar
 
 ## log files
 logs

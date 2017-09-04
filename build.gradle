@@ -23,3 +23,16 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+task stage(type: Copy, dependsOn: [clean, assemble]) {
+    from jar.archivePath
+    into project.rootDir
+    rename {
+        'pipe-hack.jar'
+    }
+}
+stage.mustRunAfter(clean)
+
+clean << {
+    project.file('tw-bnb-backend.jar').delete()
+}
+
