@@ -1,1 +1,1 @@
-web: java -Dserver.port=8081 -jar build/libs/spring-boot-heroku-pipeline.jar
+web: java -jar build/libs/spring-boot-heroku-pipeline.jar
