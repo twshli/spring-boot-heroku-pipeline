@@ -23,7 +23,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-generateGitProperties { onlyIf { !source.isEmpty() } }
+//generateGitProperties { onlyIf { !source.isEmpty() } }
 
 task stage(type: Copy, dependsOn: [clean, assemble]) {
     from jar.archivePath
