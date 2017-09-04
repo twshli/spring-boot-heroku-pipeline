@@ -23,6 +23,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+generateGitProperties { onlyIf { !source.isEmpty() } }
+
 task stage(type: Copy, dependsOn: [clean, assemble]) {
     from jar.archivePath
     into project.rootDir
@@ -33,6 +35,6 @@ task stage(type: Copy, dependsOn: [clean, assemble]) {
 stage.mustRunAfter(clean)
 
 clean << {
-    project.file('tw-bnb-backend.jar').delete()
+    project.file('pipe-hack.jar').delete()
 }
 
