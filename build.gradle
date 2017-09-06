@@ -20,6 +20,9 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
 
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'com.h2database:h2'
+
     testCompile 'junit:junit:4.12'
 }
 
@@ -35,4 +38,3 @@ dependencies {
 //clean << {
 //    project.file('pipe-hack.jar').delete()
 //}
-
