@@ -23,18 +23,16 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-//generateGitProperties { onlyIf { !source.isEmpty() } }
-
-task stage(type: Copy, dependsOn: [clean, assemble]) {
-    from jar.archivePath
-    into project.rootDir
-    rename {
-        'pipe-hack.jar'
-    }
-}
-stage.mustRunAfter(clean)
-
-clean << {
-    project.file('pipe-hack.jar').delete()
-}
+//task stage(type: Copy, dependsOn: [clean, assemble]) {
+//    from jar.archivePath
+//    into project.rootDir
+//    rename {
+//        'pipe-hack.jar'
+//    }
+//}
+//stage.mustRunAfter(clean)
+//
+//clean << {
+//    project.file('pipe-hack.jar').delete()
+//}
 
