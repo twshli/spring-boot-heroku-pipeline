@@ -1,3 +1,2 @@
 server:
-    context-path: /pipe-api
-    port: 8082
+    port: 8080
