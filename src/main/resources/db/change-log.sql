@@ -28,3 +28,10 @@ INSERT INTO STUDENT
 VALUES
   ('tw3');
 
+-- changeset tw:4
+
+INSERT INTO STUDENT
+  (name, age)
+VALUES
+  ('tw4', 27);
+
