@@ -1,3 +1,7 @@
+-- liquibase formatted sql
+
+-- changeset shli:1
+
 CREATE TABLE IF NOT EXISTS STUDENT (
   sid SERIAL NOT NULL,
   name VARCHAR(64) NOT NULL,
@@ -8,5 +12,13 @@ CREATE TABLE IF NOT EXISTS STUDENT (
 INSERT INTO STUDENT
   (name, age)
 VALUES
-  ('ming', 23);
+  ('name1', 23);
+
+-- changeset shli:2
+
+INSERT INTO STUDENT
+(name, age)
+VALUES
+  ('name2', 21);
+
 

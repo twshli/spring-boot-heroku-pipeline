@@ -9,13 +9,19 @@ server:
 
 spring:
     jpa:
+        show-sql: true
         hibernate:
             ddl-auto: none
+
+liquibase:
+    change-log: classpath:/db/change-log.sql
+    url: ${SPRING_DATASOURCE_URL}
+
 
 logging:
     level:
         root: INFO
-        org:
-            hibernate: DEBUG
-            springframework:
-                web: DEBUG
+#        org:
+#            hibernate: DEBUG
+#            springframework:
+#                web: DEBUG
