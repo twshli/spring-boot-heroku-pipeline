@@ -12,13 +12,19 @@ CREATE TABLE IF NOT EXISTS STUDENT (
 INSERT INTO STUDENT
   (name, age)
 VALUES
-  ('name1', 23);
+  ('sh1', 23);
 
 -- changeset shli:2
 
 INSERT INTO STUDENT
-(name, age)
+  (name, age)
 VALUES
-  ('name2', 21);
+  ('sh2', 21);
 
+-- changeset tw:3
+
+INSERT INTO STUDENT
+  (name)
+VALUES
+  ('tw3');
 
